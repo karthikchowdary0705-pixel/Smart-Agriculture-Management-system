@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Agriculture Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌱 Smart Agriculture Management System</h1>
+    <p>Technology for Better Farming</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#crop">Crop Advisor</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Smart Farming for a Better Future</h2>
+    <p>Monitor crops, check weather and get farming suggestions.</p>
+    <button onclick="showAdvice()">Get Crop Advice</button>
+</section>
+
+<section id="features">
+    <h2>Smart Agriculture Features</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌦️ Weather</h3>
+            <p>Temperature: 29°C</p>
+            <p>Humidity: 68%</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Soil Moisture</h3>
+            <p>Current Level: 65%</p>
+            <p>Status: Good</p>
+        </div>
+
+        <div class="card">
+            <h3>🌾 Crop Health</h3>
+            <p>Crop: Rice</p>
+            <p>Status: Healthy</p>
+        </div>
+    </div>
+</section>
+
+<section id="crop">
+    <h2>Crop Advisor</h2>
+
+    <select id="soil">
+        <option value="">Select Soil Type</option>
+        <option value="clay">Clay Soil</option>
+        <option value="sandy">Sandy Soil</option>
+        <option value="loamy">Loamy Soil</option>
+    </select>
+
+    <button onclick="showAdvice()">Get Recommendation</button>
+
+    <div id="advice"></div>
+</section>
+
+<footer>
+    © 2026 Smart Agriculture Management System
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
